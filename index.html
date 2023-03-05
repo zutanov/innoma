@@ -4,7 +4,8 @@
 	<meta charset="UTF-8">
 	<title>FIGMA | Макеты для верстки — Верстка страницы</title>
 	<meta name="description" content="Макет для верстки сайта был взял с телеграм канала FIGMA | Макеты для верстки">
-    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/font.css">
 </head>
 <body>
 
@@ -25,9 +26,76 @@
     <!-- Конец -->
 
     <div class="main">
-        <header class="header">
-            
+        <header class="header container">
+            <div class="logo">INNOMA<span>.VC</span></div>
+            <nav class="header__nav">
+                <a href="#" class="header__link">Кто мы?</a>
+                <a href="#" class="header__link">Услуги</a>
+                <a href="#" class="header__link">Акселератор</a>
+                <a href="#" class="header__link">Новости</a>
+            </nav>
+            <button class="btn btn_forest">Войти</button>
         </header>
+        <section class="hero">
+            <div class="container">
+                <h1 class="hero__title">Запустите <br>
+                <span>технологический IT-бизнес </span> <br>
+                на международных рынках</h1>
+                <div class="hero__subtitle">Открыт набор заявок на акселератор</div>
+                <button class="btn btn_sea">Подать заявку</button>
+            </div>
+        </section>
+        <section class="service">
+            <div class="container">
+                <h2 class="title service__title">Наши услуги</h2>
+                <div class="service__block">
+                    <div class="service__info">
+                        <div class="service__subtitle">Аналитические исследования</div>
+                        <p class="service__desc">Одним из наших ключевых направлений является анализ технологических трендов на международных рынках.
+                            Мы проводим анализ на основе публичных исследований McKinsey, BCG, PWC, Deloitte, Accenture, BCG, EY,  Crunchbase, Dealroom, F6S, PitchBook а также агрегируем и анализируем данные из открытых международных источников патенты, медиа, научные публикации                    
+                            </p>
+                        <button class="btn btn_forest">Узнать подробнее</button>
+                    </div>
+                    <div class="service__img">
+                        <img src="img/service_analys.png" alt="
+                        analysis">
+                    </div>
+                </div>
+                <div class="service__block">
+                    <div class="service__img">
+                        <img src="img/service_rocket.png" alt="rocket">
+                    </div>
+                    <div class="service__info">
+                        <div class="service__subtitle">Онлайн акселератор для IT бизнеса</div>
+                        <p class="service__desc">Онлайн программа аскелерации IT бизнеса позволит вашей команде открыть новые горизонты и возможности для бизнеса на глобальных рынках. В результате программы вы получите возможность презентовать свой проект для международных инвесторов и локальных партнеров                  
+                            </p>
+                        <button class="btn btn_forest">Узнать подробнее</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="for">
+            <div class="container">
+                <h2 class="title for__title">Для кого мы?</h2>
+                <div class="for__grid">
+                    <div class="for__card">
+                        <div class="for__number">01</div>
+                        <div class="for__subtitle">IT проекты на стадии идеи</div>
+                        <div class="for__desc">Для стартапов, которые планируют привлечь международные инвестиции, протестировать спрос и запустить продукт</div>
+                    </div>
+                    <div class="for__card">
+                        <div class="for__number">02</div>
+                        <div class="for__subtitle">Инновационный бизнес</div>
+                        <div class="for__desc">Для уже работающего технологического бизнес, позволим найти новые международне рынки сбыта, масштабировать бизнес</div>
+                    </div>
+                    <div class="for__card">
+                        <div class="for__number">03</div>
+                        <div class="for__subtitle">Корпорации</div>
+                        <div class="for__desc">Для уже работающего технологического бизнес, позволим найти новые международне рынки сбыта, масштабировать бизнес</div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
 
 </body>

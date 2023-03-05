@@ -1,0 +1,227 @@
+
+.maketforfigma{
+    flex: 0 0 auto;
+    background: #313a46;
+    font-weight: bold;
+    display: flex;
+}
+.maketforfigma img{
+    border-radius: 10px;
+    margin: 4px 0 0 4px;
+}
+.maketforfigma p {
+    color: #98a6ad;
+    text-decoration: none;
+    letter-spacing: .01875rem;
+    font-size: .775rem;
+    padding: 0 10px;
+    line-height: 0.70rem;
+}
+.maketforfigma p > a {
+    color: #bbe4f0;
+    font-weight: bold;
+}
+.maketforfigma p > a:hover {
+    color: #ffffff
+}
+.main{
+    flex: 1 0 auto;
+    font-family: 'Montserrat';
+    * {
+        padding: 0;
+        margin: 0;
+    }
+}
+html{
+    height: 100%;
+}
+body{       
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+
+
+.container {
+    width: 1216px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    cursor: pointer;
+    border: none;
+    font-weight: 600;
+    font-size: 18px;
+    border-radius: 10px;
+    color: #FFFFFF;
+    &_forest {
+        background: #07AF91;
+    }
+    &_sea {
+        background: linear-gradient(276.41deg, #016CA8 -7%, #61B5E4 77.16%);
+    }
+}
+
+.title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 80px;
+    color: #1178B2;
+}
+
+
+.header {   
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    height: 95px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .btn {
+        font-weight: 500;
+        width: 149px;
+        height: 55.66px;
+    }
+    .logo {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 80px;
+        color: #FFFFFF;
+        span {
+            color:#00B1E9;
+        }
+    }
+    &__nav {
+        display: flex;
+        align-items:center;        
+    }
+    &__link {
+        display: block;
+        font-weight: 500;
+        font-size: 18px;
+        color: #FFFFFF;
+        &:not(:last-child) {
+            margin-right: 52px;
+        }
+    }
+}
+
+.hero {
+    position: relative;
+    height: calc(100vh - 314.44px);
+    padding-top: 248px;
+    background: url('../img/hero.png') center center/cover no-repeat;
+    &__title {
+        font-weight: 700;
+        font-size: 43px;
+        line-height: 60px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        span {
+            background: #07AF91;
+        }
+    }
+    &__subtitle {
+        font-weight: 400;
+        font-size: 34px;
+        line-height: 54px;       
+        color: #FFFFFF;
+    }
+    .btn {
+        margin-top: 34px;
+        width: 219px;
+        height: 80px;
+    }
+}
+
+.service {
+    padding-top: 89px;
+    &__block {
+        display: flex;
+        justify-content: space-between;
+        &:not(:last-child) {
+            margin-bottom: 184px;
+        }
+    }
+    &__info {
+        width: 674px;
+    }
+    &__img {
+        width: 495px;
+        display: flex;
+        align-items:center;
+        justify-content: center;
+    }
+    &__title {
+        margin-bottom: 110px;
+    }
+    &__subtitle {
+        font-family: 'Inter';
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 29px;
+        color: #1178B2;
+        margin-bottom: 24.57px;
+    }
+    &__desc {
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 30px;
+        color: #000000;
+        margin-bottom: 20px;
+    }
+    .btn {
+        width: 326px;
+        height: 80px;
+    }
+}
+
+.for {
+    padding-top: 100px;
+    &__grid {
+        margin-top: 35px;
+        display: grid;
+        grid-template-columns: repeat(3, 392px);
+        column-gap: 20px;
+    }
+    &__card {
+        padding: 48px 30px 35px;
+        background: #FFFFFF;
+        box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.09);
+        border-radius: 10px;
+        text-align: center;
+    }
+    &__number {
+        font-weight: 800;
+        font-size: 80px;
+        color: rgba(17, 120, 178, 0.5);
+        margin-bottom: 22px;
+    }
+    &__subtitle {
+        font-weight: 600;
+        line-height: 30px;
+        color: #000000;
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+    &__desc {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 25px;
+        color: #000000;
+    }
+}
+
+
