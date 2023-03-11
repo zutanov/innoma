@@ -52,7 +52,7 @@ body {
 }
 
 .container {
-  width: 1216px;
+  max-width: 1216px;
   margin: 0 auto;
 }
 
@@ -266,7 +266,7 @@ a {
 }
 
 .consult__container {
-  width: 1354px;
+  max-width: 1354px;
   text-align: center;
 }
 
@@ -757,11 +757,11 @@ a {
   font-weight: 500;
   font-size: 18px;
   line-height: 60px;
-  text-align: center;
   color: #000000;
 }
 
 .price__content-lists {
+  padding-left: 20px;
   font-weight: 400;
   font-size: 16px;
   line-height: 35px;
@@ -886,14 +886,19 @@ a {
 }
 
 .about__images {
+  overflow: hidden;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .about__img {
   width: 236.3px;
   height: 157.53px;
   border-radius: 10px;
+}
+
+.about__img:not(:last-child) {
+  margin-right: 7.88px;
 }
 
 .expert {
@@ -954,6 +959,14 @@ a {
   font-size: 15px;
   line-height: 20px;
   color: #000000;
+}
+
+.expert__arrows {
+  display: none;
+  padding: 0 22px;
+  margin-top: 50px;
+  justify-content: space-between;
+  cursor: pointer;
 }
 
 .partner {
@@ -1027,17 +1040,24 @@ a {
 }
 
 .event__content {
+  position: relative;
   box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.09);
   border-radius: 10px;
   background: #FFFFFF;
 }
 
 .event__img {
+  width: 100%;
   height: 156px;
 }
 
+.event__img img {
+  height: 100%;
+  width: 100%;
+}
+
 .event__block {
-  padding: 19px 30px 25px;
+  padding: 20px 30px 0;
 }
 
 .event__name {
@@ -1051,10 +1071,11 @@ a {
   font-weight: 400;
   font-size: 16px;
   line-height: 25px;
-  margin-bottom: 35px;
 }
 
 .event__date {
+  position: absolute;
+  bottom: 25px;
   font-weight: 300;
   font-size: 14px;
 }
@@ -1224,4 +1245,77 @@ a {
   line-height: 60px;
   text-decoration-line: underline;
   color: #FFFFFF;
+}
+
+@media (max-width: 1439px) {
+  .consult__container {
+    max-width: 1216px;
+  }
+  .learn__container {
+    justify-content: space-around;
+  }
+  .learn__svg {
+    right: -40px;
+  }
+}
+
+@media (max-width: 1216px) {
+  .container {
+    max-width: 960px;
+  }
+  .for__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .for__card.horizontal {
+    grid-column: 1 / 3;
+  }
+  .market__content {
+    grid-template-columns: 300px 540px;
+  }
+  .market__cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .accelerator__cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .result__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .result__card {
+    padding: 35px 30px 0;
+  }
+  .price__contents {
+    justify-content: center;
+    grid-template-columns: repeat(2, 392px);
+    gap: 20px;
+  }
+  .expert__items {
+    overflow: hidden;
+    padding: 0;
+    justify-content: normal;
+    gap: 68px;
+  }
+  .expert__items-arrow {
+    display: none;
+  }
+  .expert__arrows {
+    display: flex;
+  }
+  .partner__wrapper {
+    grid-template-columns: repeat(3, 288px);
+    grid-auto-rows: 100px;
+    justify-content: center;
+  }
+  .community__title {
+    width: 100%;
+  }
+  .community__desc {
+    width: 100%;
+  }
+  .event__wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .event__block {
+    padding: 20px 15px 25px;
+  }
 }

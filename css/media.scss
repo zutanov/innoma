@@ -1,0 +1,98 @@
+@media (max-width: 1439px) {
+    .consult {
+        &__container {
+            max-width: 1216px;
+        }
+    }
+    .learn {
+        &__container {
+            justify-content: space-around;
+        }
+        &__svg {
+            right: -40px;
+        }
+    }
+}
+
+@media (max-width: 1216px) {
+    .container {
+        max-width: 960px;
+    }
+    .for {
+        &__grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        &__card {
+
+            &.horizontal {
+                grid-column: 1 / 3;
+            }
+        }
+    } 
+    .market {
+        &__content {
+            grid-template-columns: 300px 540px;
+        }
+        &__cards {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+    .accelerator {
+        &__cards {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+    .result {
+        &__grid {
+            grid-template-columns: repeat(3, 1fr);
+        }
+        &__card {
+            padding: 35px 30px 0;
+        }
+    }
+    .price {
+        &__contents {
+            justify-content: center;
+            grid-template-columns: repeat(2, 392px);
+            gap: 20px;
+        }
+    }
+    .expert {
+        &__items {
+            overflow: hidden;
+            padding: 0;
+            justify-content: normal;
+            gap: 68px;
+            &-arrow {
+                display: none;
+            }
+        }
+        &__arrows {
+            display: flex;
+        }
+    }
+    .partner {
+        &__wrapper {
+            grid-template-columns: repeat(3, 288px);
+            grid-auto-rows: 100px;
+            justify-content: center;
+        }
+    }
+    .community {
+        &__title {
+            width: 100%;
+        }
+        &__desc {
+            width: 100%;
+        }
+    }
+    .event {
+        &__wrapper {
+            grid-template-columns: repeat(3, 1fr);
+        }
+        &__block {
+            padding: 20px 15px 25px;
+        }
+
+    }
+}
