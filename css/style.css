@@ -181,6 +181,15 @@ a {
   color: #FFFFFF;
 }
 
+.hero__start-title {
+  display: none;
+  margin-top: 10px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 80px;
+  color: #FFFFFF;
+}
+
 .hero .btn {
   margin-top: 34px;
   width: 219px;
@@ -369,7 +378,9 @@ a {
 }
 
 .market__info-manager {
+  height: 84px;
   display: flex;
+  align-items: center;
 }
 
 .market__info-wrapper {
@@ -599,6 +610,14 @@ a {
   color: #000000;
 }
 
+.program__modul-weeks {
+  display: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 60px;
+  color: #000000;
+}
+
 .program__modul-img {
   position: absolute;
   right: 50px;
@@ -766,11 +785,8 @@ a {
   font-size: 16px;
   line-height: 35px;
   color: #000000;
-  margin-bottom: 46px;
-}
-
-.price__content-lists_mb11 {
-  margin-bottom: 11px;
+  height: 210px;
+  margin-bottom: 10px;
 }
 
 .price__content-wrapper {
@@ -838,6 +854,10 @@ a {
   font-weight: 400;
   font-size: 20px;
   line-height: 30px;
+}
+
+.about__top-desc-768 {
+  display: none;
 }
 
 .about__top-desc span {
@@ -1254,6 +1274,12 @@ a {
   .learn__container {
     justify-content: space-around;
   }
+  .learn__info {
+    width: 400px;
+  }
+  .learn__title {
+    font-size: 34px;
+  }
   .learn__svg {
     right: -40px;
   }
@@ -1317,5 +1343,374 @@ a {
   }
   .event__block {
     padding: 20px 15px 25px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 728px;
+  }
+  .title {
+    font-size: 32px;
+  }
+  .card__number {
+    font-size: 64px;
+  }
+  .card__subtitle {
+    font-size: 14px;
+  }
+  .card__desc {
+    font-size: 14px;
+  }
+  .header .logo {
+    font-size: 20px;
+  }
+  .header__link {
+    font-size: 16px;
+  }
+  .header .btn {
+    width: 109px;
+    font-size: 16px;
+  }
+  .hero {
+    height: calc(1140px - 67.33px);
+    padding-top: 308px;
+    text-align: center;
+  }
+  .hero__title {
+    width: 651px;
+    font-size: 36px;
+    margin: 0 auto;
+  }
+  .hero__subtitle {
+    display: none;
+  }
+  .hero__start-title {
+    display: block;
+  }
+  .hero .btn {
+    margin-top: 15px;
+    height: 71px;
+    width: 235px;
+  }
+  .service {
+    padding-top: 100px;
+    text-align: center;
+  }
+  .service__title {
+    margin-bottom: 20px;
+  }
+  .service__block {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 5px;
+  }
+  .service__block:not(:last-child) {
+    margin-bottom: 50px;
+    flex-direction: column-reverse;
+  }
+  .service__img {
+    height: 249px;
+    width: 386px;
+    margin-bottom: 20px;
+  }
+  .service__img img {
+    width: 100%;
+    height: 100%;
+  }
+  .service__subtitle {
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 20px;
+  }
+  .service__desc {
+    font-size: 16px;
+    margin-bottom: 25px;
+  }
+  .for__title {
+    text-align: center;
+  }
+  .for__grid {
+    margin-top: 20px;
+    grid-template-rows: 348px;
+  }
+  .for__card {
+    padding: 30px 27px 30px;
+  }
+  .for__subtitle {
+    margin-bottom: 10px;
+  }
+  .consult {
+    padding: 118px 0 121px;
+  }
+  .consult__title {
+    font-size: 36px;
+  }
+  .consult__subtitle {
+    font-size: 16px;
+    line-height: 30px;
+    margin: 20px 0 23px;
+  }
+  .consult__btn {
+    font-size: 18px;
+    width: 310px;
+    height: 73.81px;
+  }
+  .market__title {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .market__tabs {
+    margin-bottom: 45px;
+    height: 70px;
+  }
+  .market__tab {
+    font-size: 14px;
+    line-height: 70px;
+  }
+  .market__content {
+    grid-template-columns: 331px 397px;
+    gap: 0;
+  }
+  .market__info {
+    padding-top: 0;
+  }
+  .market__info-title {
+    margin-bottom: 17px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 34.5px;
+  }
+  .market__info-text {
+    font-size: 14px;
+    margin-bottom: 17px;
+  }
+  .market__info-block {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .market__cards {
+    padding-top: 24px;
+    grid-template-rows: repeat(2, 133px);
+    gap: 9px;
+  }
+  .market__card {
+    padding-top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .market__card-load .market__card-text {
+    margin-top: 15px;
+    font-size: 14px;
+  }
+  .market__card-title {
+    font-size: 36px;
+  }
+  .market__card-subtitle {
+    font-size: 20px;
+  }
+  .market__btn {
+    margin: 22px 0 0;
+  }
+  .accelerator__title {
+    text-align: center;
+    margin-bottom: 0;
+  }
+  .accelerator__subtitle {
+    font-size: 16px;
+    text-align: center;
+  }
+  .accelerator__card {
+    padding: 0px 40px;
+  }
+  .accelerator__card:first-child {
+    padding-top: 47px;
+    justify-content: flex-start;
+  }
+  .accelerator__card-number {
+    margin-bottom: 20px;
+    line-height: 119px;
+    font-size: 98px;
+  }
+  .accelerator__card-text {
+    text-align: center;
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .accelerator__video {
+    height: 345px;
+    padding: 90px 0;
+  }
+  .accelerator__video-title {
+    margin-top: 0;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+  }
+  .accelerator__video-play {
+    margin-top: 20px;
+    width: 89px;
+    height: 89px;
+  }
+  .accelerator__video-play img {
+    width: 100%;
+    height: 100%;
+  }
+  .program__title {
+    text-align: center;
+  }
+  .program__modul {
+    height: 76px;
+    padding: 0 31px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .program__modul_active .program__modul-number {
+    margin-right: 0;
+  }
+  .program__modul_active .program__modul-img {
+    margin-left: 0;
+  }
+  .program__modul-text {
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    line-height: 25px;
+    font-size: 14px;
+  }
+  .program__modul-number {
+    width: 96px;
+    font-size: 16px;
+    margin-right: 25px;
+  }
+  .program__modul-title {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+  }
+  .program__modul-weeks {
+    display: block;
+  }
+  .program__modul-img {
+    position: static;
+    margin-left: 25px;
+  }
+  .result__title {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .result__card {
+    padding: 15px 7px;
+  }
+  .result__number {
+    font-size: 64px;
+  }
+  .result__subtitle {
+    font-size: 10px;
+  }
+  .result__desc {
+    font-size: 10px;
+  }
+  .price__title {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .price__contents {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .price__content {
+    padding: 20px 32px 25px;
+  }
+  .price__content-img {
+    padding-bottom: 21px;
+  }
+  .price__content-title {
+    font-size: 18px;
+  }
+  .price__content-subtitle {
+    font-size: 16px;
+  }
+  .price__content-lists {
+    font-size: 14px;
+  }
+  .price__content-text_b {
+    font-size: 16px;
+  }
+  .price__content-text {
+    font-size: 14px;
+  }
+  .price__content-price {
+    font-size: 16px;
+  }
+  .price__btn {
+    width: 288px;
+  }
+  .about__title {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .about__top {
+    flex-direction: column;
+    align-items: center;
+  }
+  .about__top-img {
+    width: 345px;
+    padding-bottom: 0;
+    height: 270px;
+    margin-bottom: 25px;
+  }
+  .about__top-img img {
+    width: 100%;
+    height: 100%;
+  }
+  .about__top-desc {
+    display: none;
+  }
+  .about__top-desc-768 {
+    display: block;
+    text-align: center;
+    padding: 0 69px;
+    width: 100%;
+    margin: 0;
+    font-weight: 600;
+    line-height: 30px;
+    font-size: 18px;
+  }
+  .about__top-desc-768 span {
+    color: #1178B2;
+  }
+  .about__bottom {
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 0;
+  }
+  .about__bottom-desc {
+    margin: 0 auto;
+    padding: 0;
+    width: 579px;
+  }
+  .about__bottom-text {
+    font-style: normal;
+    text-align: center;
+    margin-bottom: 38px;
+  }
+  .about__bottom-img {
+    margin: 0 auto;
+    width: 356px;
+    height: 401px;
+  }
+  .about__bottom-img img {
+    width: 100%;
+    height: 100%;
+  }
+  .about__bottom-author {
+    position: absolute;
+    bottom: 35px;
+    left: 30px;
+  }
+  .about__container {
+    max-width: 100%;
   }
 }

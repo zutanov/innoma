@@ -165,6 +165,14 @@ a {
         line-height: 54px;       
         color: #FFFFFF;
     }
+    &__start-title {
+        display: none;
+        margin-top: 10px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 80px;
+        color: #FFFFFF;
+    }
     .btn {
         margin-top: 34px;
         width: 219px;
@@ -325,7 +333,9 @@ a {
             color: #000000;
         }
         &-manager {
+            height: 84px;
             display: flex;
+            align-items: center;
         }
         &-wrapper {
             margin-left: 10px;
@@ -524,6 +534,13 @@ a {
             font-size: 20px;
             color: #000000;
         }
+        &-weeks {
+            display: none;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 60px;
+            color: #000000;
+        }
         &-img {
             position: absolute; 
             right: 50px;
@@ -667,10 +684,8 @@ a {
             font-size: 16px;
             line-height: 35px;
             color: #000000;
-            margin-bottom: 46px;
-            &_mb11 {
-                margin-bottom: 11px;
-            }
+            height: 210px;
+            margin-bottom: 10px;
         }
         &-wrapper {
             position: relative;
@@ -729,6 +744,9 @@ a {
             font-weight: 400;
             font-size: 20px;
             line-height: 30px;
+            &-768 {
+                display: none;
+            }
             & span {
                 font-weight: 600;
                 color: #1178B2;
